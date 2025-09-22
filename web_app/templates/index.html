@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Strain Detection App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Eye Strain Detection App</h1>
+
+        <div class="controls">
+            <label for="cameraSelect">Select Camera:</label>
+            <select id="cameraSelect">
+                {% for cam in cameras %}
+                    <option value="{{ cam }}">{{ cam }}</option>
+                {% endfor %}
+            </select>
+            <button id="startBtn">Start</button>
+        </div>
+
+        <div class="video-container">
+            <img id="videoFeed" src="" alt="Video Feed">
+            <div class="overlay" id="overlayInfo">
+                <!-- Overlay handled directly in video frame -->
+            </div>
+        </div>
+
+        <div class="logs">
+            <h2>Logs</h2>
+            <pre id="logContent">Loading logs...</pre>
+            <button id="clearLogsBtn">Clear Logs</button>
+        </div>
+    </div>
+
+    <!-- Audio element for beep sound -->
+    <audio id="beepAudio" src="{{ url_for('static', filename='beep.mp3') }}" preload="auto"></audio>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

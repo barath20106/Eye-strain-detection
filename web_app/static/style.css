@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#startBtn {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+#startBtn:hover {
+    background-color: #218838;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#videoFeed {
+    max-width: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.logs {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.logs h2 {
+    margin-top: 0;
+}
+
+#logContent {
+    white-space: pre-wrap;
+    font-family: monospace;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#clearLogsBtn {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clearLogsBtn:hover {
+    background-color: #c82333;
+}
+
+/* Fatigue Alert Popup Styles */
+#fatigueAlert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff8dc;
+    border: 2px solid #f39c12;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.6);
+    padding: 25px 40px;
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #d35400;
+}
+
+#fatigueAlert button {
+    margin-top: 15px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#fatigueAlert button:hover {
+    background-color: #e67e22;
+}
+
