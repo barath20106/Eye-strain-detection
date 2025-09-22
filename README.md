@@ -1,3 +1,5 @@
+Real Time Web Application on Eye Strain Detection 
+
 Prolonged screen exposure can lead to digital eye strain, causing discomfort
 and reduced productivity. This project proposes an AI-powered web
 application that monitors users in real time using computer vision techniques
